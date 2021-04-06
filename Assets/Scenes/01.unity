@@ -1634,6 +1634,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 723430734, guid: 925c72b3dbcb30b00ac8af1f9e88ee0f, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4188036171707327889, guid: 925c72b3dbcb30b00ac8af1f9e88ee0f, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -1681,10 +1685,6 @@ PrefabInstance:
     - target: {fileID: 4188036171707327890, guid: 925c72b3dbcb30b00ac8af1f9e88ee0f, type: 3}
       propertyPath: m_Name
       value: Game Manager
-      objectReference: {fileID: 0}
-    - target: {fileID: 4188036171874314244, guid: 925c72b3dbcb30b00ac8af1f9e88ee0f, type: 3}
-      propertyPath: m_Enabled
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 925c72b3dbcb30b00ac8af1f9e88ee0f, type: 3}
