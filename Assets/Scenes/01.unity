@@ -494,14 +494,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player-SOCCER
       objectReference: {fileID: 0}
-    - target: {fileID: 2069222511925530272, guid: 67133aad7775d37e6bd16e429c25fffb, type: 3}
-      propertyPath: m_TagString
-      value: Player
+    - target: {fileID: 4115869123922186916, guid: 67133aad7775d37e6bd16e429c25fffb, type: 3}
+      propertyPath: speed
+      value: 10
       objectReference: {fileID: 0}
-    - target: {fileID: 7765148210970344481, guid: 67133aad7775d37e6bd16e429c25fffb, type: 3}
-      propertyPath: m_UIInputModule
-      value: 
-      objectReference: {fileID: 723430732}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 67133aad7775d37e6bd16e429c25fffb, type: 3}
 --- !u!1 &723430731
@@ -531,24 +527,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 723430731}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
+  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MoveRepeatDelay: 0.5
-  m_MoveRepeatRate: 0.1
-  m_ActionsAsset: {fileID: -944628639613478452, guid: eddc46b8ddbfafd2c814b91679cdc529, type: 3}
-  m_PointAction: {fileID: 4447848052540117426, guid: eddc46b8ddbfafd2c814b91679cdc529, type: 3}
-  m_MoveAction: {fileID: -6213845818080670974, guid: eddc46b8ddbfafd2c814b91679cdc529, type: 3}
-  m_SubmitAction: {fileID: -4987507286993835717, guid: eddc46b8ddbfafd2c814b91679cdc529, type: 3}
-  m_CancelAction: {fileID: -7366243994030788458, guid: eddc46b8ddbfafd2c814b91679cdc529, type: 3}
-  m_LeftClickAction: {fileID: 4534611870264633927, guid: eddc46b8ddbfafd2c814b91679cdc529, type: 3}
-  m_MiddleClickAction: {fileID: 0}
-  m_RightClickAction: {fileID: 0}
-  m_ScrollWheelAction: {fileID: 0}
-  m_TrackedDevicePositionAction: {fileID: 0}
-  m_TrackedDeviceOrientationAction: {fileID: 0}
-  m_DeselectOnBackgroundClick: 1
-  m_PointerBehavior: 0
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
 --- !u!114 &723430733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1634,10 +1622,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 723430734, guid: 925c72b3dbcb30b00ac8af1f9e88ee0f, type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 4188036171707327889, guid: 925c72b3dbcb30b00ac8af1f9e88ee0f, type: 3}
       propertyPath: m_RootOrder
       value: 2
