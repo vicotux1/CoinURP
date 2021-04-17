@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMove : MonoBehaviour{
-   private Rigidbody rb;
+   public Rigidbody rb;
    [Range(1.0f, 200.0f)]public float speed;
     private void Awake() => rb = GetComponent<Rigidbody>();
 

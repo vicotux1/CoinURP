@@ -13,14 +13,13 @@ public class PlayerInput : MonoBehaviour{
     [Header("Position")]
     public Vector3 Position_initial;
     private float MovX, MovY;
-    
-    
-
-    
-
     private void Awake() {
+    Reset();
+    }
+    public void Reset() {
     Cursor.visible = false;
-    transform.position=Position_initial;
+    Player.rb.velocity=Vector3.zero;
+    transform.position=Position_initial;  
     }
 
     void FixedUpdate() {

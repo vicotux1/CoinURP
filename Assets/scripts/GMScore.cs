@@ -7,18 +7,19 @@ using UnityEngine.SceneManagement;
 #endregion
 
 public class GMScore : MonoBehaviour{
+     
     public static GMScore Score;
     public int MaxScore=0;
     public int counter=0;
     [Header ("Texto en UI")]
     public Text Pointstext; 
 
-    private void Awake() {
+    private void Awake() {    
     if (Score!=null){
     Destroy(this.gameObject);      
     }else{Score=this;
     DontDestroyOnLoad(this.gameObject);
-    Debug.Log("esto es un singleton");
+    Debug.Log("esto es un singleton Score");
     } 
   
         textupdate();
@@ -42,6 +43,6 @@ public class GMScore : MonoBehaviour{
      void textupdate(){
         Pointstext.text=counter.ToString();
     } 
-  
+    
 
 }

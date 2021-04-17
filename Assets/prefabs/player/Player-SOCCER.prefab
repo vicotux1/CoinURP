@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 1186191870007410838}
   - component: {fileID: 7603750212264321717}
   - component: {fileID: 4115869123922186916}
+  - component: {fileID: 8250670756115701696}
   m_Layer: 0
   m_Name: Player-SOCCER
   m_TagString: Player
@@ -143,4 +144,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0e711ecafdc55247ab0a699ce58e101, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
+  rb: {fileID: 1186191870007410839}
+  speed: 10
+--- !u!114 &8250670756115701696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2069222511925530272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15cf2e012e498122f82ba13588291207, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  input: {fileID: 7603750212264321717}
+  Lives: {fileID: 0}
