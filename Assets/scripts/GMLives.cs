@@ -5,7 +5,9 @@ using UnityEngine.UI;
 
 public class GMLives : MonoBehaviour{
     public static GMLives GM_Lives;
-    public int lives;
+
+
+   [Range (0, 9)] public int lives;
     public Text livesText;
 
     private void Awake() {  

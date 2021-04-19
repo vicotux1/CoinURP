@@ -7,11 +7,12 @@ using UnityEngine.SceneManagement;
 #endregion
 
 public class GMScore : MonoBehaviour{
-     
+    public Destroy Destroy; 
     public static GMScore Score;
     public int MaxScore=0;
     public int counter=0;
     [Header ("Texto en UI")]
+    [Range (0, 10)] public int total_levels;
     public Text Pointstext; 
 
     private void Awake() {    
@@ -26,8 +27,13 @@ public class GMScore : MonoBehaviour{
     }
     private void Update() {
         if(counter>=MaxScore){
-        SceneManager.LoadScene(SceneManager.GetActiveScene ().buildIndex + 1);
+        if (SceneManager.GetActiveScene ().buildIndex <total_levels) {
+            SceneManager.LoadScene(SceneManager.GetActiveScene ().buildIndex + 1);
+        } if (SceneManager.GetActiveScene ().buildIndex ==total_levels) {
+            SceneManager.LoadScene("00");
+            Destroy.DestroyGameObject();
         }
+    }
     }
 
     public void Points(int Value){
