@@ -625,11 +625,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1728408389351920666, guid: 67133aad7775d37e6bd16e429c25fffb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.6
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1728408389351920666, guid: 67133aad7775d37e6bd16e429c25fffb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.5
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 1728408389351920666, guid: 67133aad7775d37e6bd16e429c25fffb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -663,6 +663,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player-SOCCER
       objectReference: {fileID: 0}
+    - target: {fileID: 6406277721700513592, guid: 67133aad7775d37e6bd16e429c25fffb, type: 3}
+      propertyPath: m_UIInputModule
+      value: 
+      objectReference: {fileID: 1375799131}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 67133aad7775d37e6bd16e429c25fffb, type: 3}
 --- !u!1001 &775254264
@@ -941,7 +945,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 965502624}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.78, z: 0}
   m_LocalScale: {x: 3, y: 1, z: 3}
   m_Children: []
   m_Father: {fileID: 962893091}
@@ -1272,6 +1276,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 660545918304235061, guid: cdb06536b0a2ea96db0252d224636140, type: 3}
   m_PrefabInstance: {fileID: 501787374}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1375799131 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9009217080272385352, guid: 925c72b3dbcb30b00ac8af1f9e88ee0f, type: 3}
+  m_PrefabInstance: {fileID: 1873790885}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1460413034
 GameObject:
   m_ObjectHideFlags: 0
@@ -2068,10 +2083,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4188036171823510308, guid: 925c72b3dbcb30b00ac8af1f9e88ee0f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4188036171874314244, guid: 925c72b3dbcb30b00ac8af1f9e88ee0f, type: 3}
-      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6036650346939066784, guid: 925c72b3dbcb30b00ac8af1f9e88ee0f, type: 3}

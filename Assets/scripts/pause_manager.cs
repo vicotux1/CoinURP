@@ -15,10 +15,7 @@ public class pause_manager : MonoBehaviour {
 	Cursor.visible = false;
 	}
 	void Update(){
-		if (Input.GetButtonDown ("Cancel")){
-			Pause();
-			Cursor.visible = !true;
-			}
+		
 		}
     public void Pause(){
         canvasPause.enabled = !canvasPause.enabled;

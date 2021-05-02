@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class PlayerColisions : MonoBehaviour{
 
-public PlayerInput input;
+public PlayerMove move;
 //public 
 //public GMLives Lives;
 void OnTriggerEnter(Collider other){
         if (other.tag == "Enemy"){
-			input.Reset();
+			move.Reset();
 			Debug.Log("trigger");
 			  GMLives.GM_Lives.life(-1);
 			}
