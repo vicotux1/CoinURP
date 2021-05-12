@@ -12,7 +12,7 @@ public class pause_manager : MonoBehaviour {
 	void Start(){
 	canvasPause.enabled = false;
 	Time.timeScale = 1;
-	Cursor.visible = false;
+	//Cursor.visible = false;
 	}
 	void Update(){
 		

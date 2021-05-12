@@ -11,7 +11,7 @@ public class PlayerMove : MonoBehaviour{
     rb = GetComponent<Rigidbody>();
     }
     public void Reset() {
-    Cursor.visible = false;
+    //Cursor.visible = false;
     rb.velocity=Vector3.zero;
    transform.position=Position_initial;  
     }

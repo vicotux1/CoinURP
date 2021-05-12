@@ -7,7 +7,7 @@
             "actions": [
                 {
                     "name": "Move",
-                    "type": "Value",
+                    "type": "PassThrough",
                     "id": "cb637d19-c91a-4c32-8b37-e4796d294bec",
                     "expectedControlType": "Vector2",
                     "processors": "",
@@ -15,7 +15,7 @@
                 },
                 {
                     "name": "Look",
-                    "type": "Value",
+                    "type": "PassThrough",
                     "id": "d695202c-eece-43ee-868e-f4062c2dcf87",
                     "expectedControlType": "Vector2",
                     "processors": "",
@@ -23,7 +23,7 @@
                 },
                 {
                     "name": "Fire",
-                    "type": "Button",
+                    "type": "PassThrough",
                     "id": "2f3e119e-c1aa-446c-a49c-309cf582657e",
                     "expectedControlType": "Button",
                     "processors": "",
@@ -38,6 +38,28 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Gamepad",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7f5e2d9d-d822-474a-9ab2-5b3647adaa6d",
+                    "path": "<Gamepad>/rightStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2df1d164-8cde-4888-bd4c-1e0b4b10e0f9",
+                    "path": "<Gamepad>/dpad",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
                     "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -259,7 +281,7 @@
             "actions": [
                 {
                     "name": "Navigate",
-                    "type": "Value",
+                    "type": "PassThrough",
                     "id": "0339a9e2-0901-41be-bbe6-39f9725aedd7",
                     "expectedControlType": "Vector2",
                     "processors": "",
@@ -267,7 +289,7 @@
                 },
                 {
                     "name": "Submit",
-                    "type": "Button",
+                    "type": "PassThrough",
                     "id": "6fe1c009-77ca-4bda-aac7-7c1d43d0a671",
                     "expectedControlType": "Button",
                     "processors": "",
@@ -275,7 +297,7 @@
                 },
                 {
                     "name": "Cancel",
-                    "type": "Button",
+                    "type": "PassThrough",
                     "id": "f11493f0-79e4-40c9-8510-937f332a5e04",
                     "expectedControlType": "Button",
                     "processors": "",
