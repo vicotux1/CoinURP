@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMove : MonoBehaviour{
-   public Rigidbody rb;
+   Rigidbody rb;
    public Vector3 Position_initial;
-   [Range(1.0f, 2000.0f)]public float speed=2000.0f;
+   public float speed=10.0f;
+   //float MovX, MovY;
    private void Awake() {
-    Reset();
+    //Reset();
     rb = GetComponent<Rigidbody>();
     }
     public void Reset() {
@@ -15,8 +16,9 @@ public class PlayerMove : MonoBehaviour{
     rb.velocity=Vector3.zero;
    transform.position=Position_initial;  
     }
-    public void OnMovement(float MovX, float MovY){
+    public void Movement(float MovX, float MovY){
     Vector3 move=new Vector3(MovX,transform.position.y,MovY);
-    rb.AddForce(move*speed);
+    rb.AddForce(move* speed);
+    //rb.AddTorque(move* speed);
     }
 }

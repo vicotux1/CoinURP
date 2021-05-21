@@ -536,6 +536,8 @@ GameObject:
   - component: {fileID: 7440688950700266237}
   - component: {fileID: 1563210262761692291}
   - component: {fileID: 1555783614220330123}
+  - component: {fileID: 876274950888777946}
+  - component: {fileID: 186307227782020466}
   m_Layer: 0
   m_Name: Player-RollerBall
   m_TagString: Player
@@ -599,8 +601,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e81bbc910950cf4dcb8678d344d6ecc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Position_initial: {x: 0, y: 0.4, z: -0.4}
-  speed: 11
+  Player: {fileID: 876274950888777946}
 --- !u!114 &1555783614220330123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -613,7 +614,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: eddc46b8ddbfafd2c814b91679cdc529, type: 3}
+  m_Actions: {fileID: -944628639613478452, guid: 7326ec3a324eed35ca27a571e0cc4bf0, type: 3}
   m_NotificationBehavior: 0
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
@@ -628,9 +629,36 @@ MonoBehaviour:
   m_ActionEvents: []
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
-  m_DefaultActionMap: Player Controls
+  m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &876274950888777946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8932845170492698739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0e711ecafdc55247ab0a699ce58e101, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Position_initial: {x: 0.5, y: 0.25, z: 0}
+  speed: 10
+--- !u!114 &186307227782020466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8932845170492698739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15cf2e012e498122f82ba13588291207, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move: {fileID: 876274950888777946}
 --- !u!1 &9015828140694186050
 GameObject:
   m_ObjectHideFlags: 0

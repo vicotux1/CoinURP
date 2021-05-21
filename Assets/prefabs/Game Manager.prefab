@@ -1453,7 +1453,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9320d1549c9932cab283d11153a26e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lives: 9
+  main_Menu: 00
+  Destroy: {fileID: 6514985684033748192}
+  lives: 1
   livesText: {fileID: 4188036173172842976}
 --- !u!114 &1921248325783128931
 MonoBehaviour:
@@ -1818,7 +1820,7 @@ Canvas:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4188036171874314247}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_RenderMode: 0
   m_Camera: {fileID: 0}

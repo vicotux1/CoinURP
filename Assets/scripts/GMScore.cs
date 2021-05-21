@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 #endregion
 
 public class GMScore : MonoBehaviour{
-    public Destroy Destroy; 
+   public Destroy Destroy; 
     public static GMScore Score;
     public int MaxScore=0;
     public int counter=0;
@@ -17,7 +17,7 @@ public class GMScore : MonoBehaviour{
 
     private void Awake() {    
     if (Score!=null){
-    Destroy(this.gameObject);      
+    Destroy(this.gameObject,0);      
     }else{Score=this;
     DontDestroyOnLoad(this.gameObject);
     Debug.Log("esto es un singleton Score");
@@ -26,12 +26,16 @@ public class GMScore : MonoBehaviour{
         textupdate();
     }
     private void Update() {
+        Scene();
+    }
+    void Scene(){
         if(counter>=MaxScore){
         if (SceneManager.GetActiveScene ().buildIndex <total_levels) {
             SceneManager.LoadScene(SceneManager.GetActiveScene ().buildIndex + 1);
-        } if (SceneManager.GetActiveScene ().buildIndex ==total_levels) {
+        } 
+        if (SceneManager.GetActiveScene ().buildIndex ==total_levels) {
             SceneManager.LoadScene("00");
-            Destroy.DestroyGameObject();
+            Destroy.DestroyGameObject(3);
         }
     }
     }

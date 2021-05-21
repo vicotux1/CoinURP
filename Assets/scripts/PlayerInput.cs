@@ -5,11 +5,18 @@ using UnityEngine.InputSystem;
 
 public class PlayerInput : MonoBehaviour{
     [SerializeField] PlayerMove Player;
-    private float MovX, MovY;
-    void OnMovement(InputValue MovementValue){
-    Vector2 MoveVector=MovementValue.Get<Vector2>();
-    MovX=MoveVector.x;
-    MovY=MoveVector.y; 
-    Player.OnMovement(MovX, MovY); 
-    }    
+    private float movementY,movementX;
+
+    private void OnMove(InputValue movementValue)
+    {
+        Vector2 movementVector = movementValue.Get<Vector2>();
+
+        movementX = movementVector.x;
+        movementY = movementVector.y;
+
+        
+    } 
+    private void FixedUpdate(){
+        Player.Movement(movementX, movementY);
+    }
 }
