@@ -7,26 +7,25 @@ using UnityEngine.SceneManagement;
 #endregion
 
 public class GMScore : MonoBehaviour{
-   public Destroy Destroy; 
+   public GMLives GM_Lives; 
+   //public GameObject LoadText;
     public static GMScore Score;
     public int MaxScore=0;
     public int counter=0;
     [Header ("Texto en UI")]
     [Range (0, 10)] public int total_levels;
     public Text Pointstext; 
-
-    private void Awake() {    
-    if (Score!=null){
-    Destroy(this.gameObject,0);      
+    private void Awake() {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+        if (Score!=null){
+     Destroy(this.gameObject,0);      
     }else{Score=this;
-    DontDestroyOnLoad(this.gameObject);
-    Debug.Log("esto es un singleton Score");
+        DontDestroyOnLoad(this.gameObject);
     } 
   
         textupdate();
     }
     private void Update() {
-        Scene();
+       Scene();
     }
     void Scene(){
         if(counter>=MaxScore){
@@ -34,10 +33,14 @@ public class GMScore : MonoBehaviour{
             SceneManager.LoadScene(SceneManager.GetActiveScene ().buildIndex + 1);
         } 
         if (SceneManager.GetActiveScene ().buildIndex ==total_levels) {
-            SceneManager.LoadScene("00");
-            Destroy.DestroyGameObject(3);
+            GM_Lives.GameOver();
+            }
         }
     }
+    IEnumerator MainMenu(){
+        SceneManager.LoadScene("00");
+        yield return new WaitForSeconds(3);
+        Destroy(this.gameObject);
     }
 
     public void Points(int Value){

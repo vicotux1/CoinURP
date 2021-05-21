@@ -33,12 +33,13 @@ public class GMLives : MonoBehaviour{
     void Texttostring() {
    livesText.text = lives.ToString();
     }
-
+    public void GameOver(){
+    StartCoroutine(GamOver());
+}
     IEnumerator GamOver(){
         SceneManager.LoadScene (main_Menu);
         Time.timeScale = Time.timeScale == 0 ? 1: 0;
         Destroy(this.gameObject);
-    
-        yield return new WaitForSeconds(0);
+    yield return new WaitForSeconds(0);
     }
 }

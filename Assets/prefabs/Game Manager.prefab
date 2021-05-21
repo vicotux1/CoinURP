@@ -1455,7 +1455,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   main_Menu: 00
   Destroy: {fileID: 6514985684033748192}
-  lives: 1
+  lives: 8
   livesText: {fileID: 4188036173172842976}
 --- !u!114 &1921248325783128931
 MonoBehaviour:
@@ -1469,7 +1469,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4521fc17551d20bcac821446ab14898, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Destroy: {fileID: 6514985684033748192}
+  GM_Lives: {fileID: 4188036171707327894}
   MaxScore: 0
   counter: 0
   total_levels: 3
