@@ -889,37 +889,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1660844289200910045, guid: b41552ebad203a757a9a7773cc8220b3, type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1660844289200910045, guid: b41552ebad203a757a9a7773cc8220b3, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1024
+      objectReference: {fileID: 0}
+    - target: {fileID: 1660844289200910045, guid: b41552ebad203a757a9a7773cc8220b3, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 600
+      objectReference: {fileID: 0}
     - target: {fileID: 1660844289200910047, guid: b41552ebad203a757a9a7773cc8220b3, type: 3}
       propertyPath: m_Name
       value: Canvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 1660844289781820940, guid: b41552ebad203a757a9a7773cc8220b3, type: 3}
-      propertyPath: m_Text
-      value: Escena 02
-      objectReference: {fileID: 0}
-    - target: {fileID: 1660844289781820940, guid: b41552ebad203a757a9a7773cc8220b3, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1660844289781820940, guid: b41552ebad203a757a9a7773cc8220b3, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1660844289781820940, guid: b41552ebad203a757a9a7773cc8220b3, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1660844289781820940, guid: b41552ebad203a757a9a7773cc8220b3, type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 98390367044388072aa22c33bde60117, type: 3}
-    - target: {fileID: 1660844289781820940, guid: b41552ebad203a757a9a7773cc8220b3, type: 3}
-      propertyPath: m_FontData.m_MaxSize
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 1660844289781820940, guid: b41552ebad203a757a9a7773cc8220b3, type: 3}
-      propertyPath: m_FontData.m_FontStyle
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b41552ebad203a757a9a7773cc8220b3, type: 3}
