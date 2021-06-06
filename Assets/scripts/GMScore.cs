@@ -8,7 +8,6 @@ using UnityEngine.SceneManagement;
 
 public class GMScore : MonoBehaviour{
    public GMLives GM_Lives; 
-   //public GameObject LoadText;
     public static GMScore Score;
     public int MaxScore=0;
     public int counter=0;

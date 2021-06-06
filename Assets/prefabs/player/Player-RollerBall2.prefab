@@ -568,6 +568,7 @@ GameObject:
   - component: {fileID: 3157904897953899067}
   - component: {fileID: 8722775380821072881}
   - component: {fileID: 6595245566905234599}
+  - component: {fileID: 3992093446261265040}
   m_Layer: 0
   m_Name: Player-RollerBall2
   m_TagString: Player
@@ -679,3 +680,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 8722775380821072881}
+--- !u!114 &3992093446261265040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3157904897953899062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53c5f3e98a5b08f86875981bccd592f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move: {fileID: 8722775380821072881}
