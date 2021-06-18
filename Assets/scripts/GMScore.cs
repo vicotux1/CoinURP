@@ -26,9 +26,6 @@ public class GMScore : MonoBehaviour{
   
         textupdate();
     }
-    private void Start() {
-        Null();
-    }
     private void Update() {
        Scene();
        Null();
