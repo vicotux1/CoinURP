@@ -2313,7 +2313,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1660844289200910047, guid: b41552ebad203a757a9a7773cc8220b3, type: 3}
       propertyPath: m_Name
-      value: Canvas
+      value: Canvas02
       objectReference: {fileID: 0}
     - target: {fileID: 1660844289781820940, guid: b41552ebad203a757a9a7773cc8220b3, type: 3}
       propertyPath: m_Text

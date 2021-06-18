@@ -1055,7 +1055,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2565039680320596894, guid: 1c87873c1d07d0be199e37a156224fb7, type: 3}
       propertyPath: m_Name
-      value: Platform3 (1)
+      value: Platform4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c87873c1d07d0be199e37a156224fb7, type: 3}
@@ -2145,7 +2145,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1660844289200910047, guid: b41552ebad203a757a9a7773cc8220b3, type: 3}
       propertyPath: m_Name
-      value: Canvas
+      value: Canvas04
       objectReference: {fileID: 0}
     - target: {fileID: 1660844289781820940, guid: b41552ebad203a757a9a7773cc8220b3, type: 3}
       propertyPath: m_Text

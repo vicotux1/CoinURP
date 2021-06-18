@@ -610,7 +610,7 @@ PrefabInstance:
       objectReference: {fileID: 557743851}
     - target: {fileID: 1031245717214574111, guid: b41552ebad203a757a9a7773cc8220b3, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1157105672392989154, guid: b41552ebad203a757a9a7773cc8220b3, type: 3}
       propertyPath: m_AnchorMax.y
@@ -642,7 +642,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1660844289200910043, guid: b41552ebad203a757a9a7773cc8220b3, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 1660844289200910043, guid: b41552ebad203a757a9a7773cc8220b3, type: 3}
       propertyPath: m_AnchorMax.x
@@ -730,7 +730,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1660844289200910047, guid: b41552ebad203a757a9a7773cc8220b3, type: 3}
       propertyPath: m_Name
-      value: Canvas
+      value: Canvas.LoadText
       objectReference: {fileID: 0}
     - target: {fileID: 1660844289781820940, guid: b41552ebad203a757a9a7773cc8220b3, type: 3}
       propertyPath: m_Text
@@ -738,7 +738,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1660844289781820942, guid: b41552ebad203a757a9a7773cc8220b3, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3591727946344020508, guid: b41552ebad203a757a9a7773cc8220b3, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1207,7 +1207,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1813224598300294, guid: 95354847711d363408aebd57a0dc92ae, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4679105028047868, guid: 95354847711d363408aebd57a0dc92ae, type: 3}
       propertyPath: m_RootOrder
@@ -1785,7 +1785,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5160625762618590225, guid: ccc06e52f0a2670f2a95b87c36419cb5, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5160625762618590225, guid: ccc06e52f0a2670f2a95b87c36419cb5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3018,7 +3018,7 @@ Canvas:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4188036171732295466}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 1
   m_Camera: {fileID: 0}
