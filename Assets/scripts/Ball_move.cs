@@ -3,10 +3,11 @@ using UnityEngine;
 
     public class Ball_move : MonoBehaviour
     {
-        [SerializeField] private float m_MovePower = 5,m_MaxAngularVelocity = 25,m_JumpPower = 2; 
+        [SerializeField] private float m_MovePower = 5,
+        m_MaxAngularVelocity = 25; 
+        [SerializeField] private Vector3 Position_initial;
+        [SerializeField] private Rigidbody m_Rigidbody;
         private const float k_GroundRayLength = 1f;
-        public Vector3 Position_initial;
-        public Rigidbody m_Rigidbody;
 
 
         private void Awake(){

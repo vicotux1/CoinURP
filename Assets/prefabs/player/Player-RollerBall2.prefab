@@ -664,8 +664,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MovePower: 3
   m_MaxAngularVelocity: 20
-  m_JumpPower: 0
-  Position_initial: {x: 1, y: 1, z: 0}
+  Position_initial: {x: -1.4, y: 0.25, z: 0}
   m_Rigidbody: {fileID: 3157904897953899069}
 --- !u!114 &6595245566905234599
 MonoBehaviour:

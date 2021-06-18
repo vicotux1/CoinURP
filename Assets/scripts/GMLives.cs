@@ -10,7 +10,7 @@ public class GMLives : MonoBehaviour{
     public Destroy Destroy; 
 
 
-   [Range (0, 9)] public int lives;
+   [Range (0, 25)] public int lives;
     public Text livesText;
 
     private void Awake() {  
