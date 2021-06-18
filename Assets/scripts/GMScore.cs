@@ -7,14 +7,17 @@ using UnityEngine.SceneManagement;
 #endregion
 
 public class GMScore : MonoBehaviour{
-   public GMLives GM_Lives; 
+    public GMLives GM_Lives; 
+    [SerializeField] private GameObject GameScenes;
     public static GMScore Score;
     public int MaxScore=0;
     public int counter=0;
     [Header ("Texto en UI")]
     [Range (0, 10)] public int total_levels;
     public Text Pointstext; 
-    private void Awake() {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+    private void Awake() {
+        Null();
+    GameScenes.SetActive(false);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
         if (Score!=null){
      Destroy(this.gameObject,0);      
     }else{Score=this;
@@ -23,13 +26,22 @@ public class GMScore : MonoBehaviour{
   
         textupdate();
     }
+    private void Start() {
+        Null();
+    }
     private void Update() {
        Scene();
+       Null();
+    }
+    void Null(){
+        if (GameScenes == null)
+    GameScenes= GameObject.FindWithTag("GameScenes");
     }
     void Scene(){
         if(counter>=MaxScore){
         if (SceneManager.GetActiveScene ().buildIndex <total_levels) {
-            SceneManager.LoadScene(SceneManager.GetActiveScene ().buildIndex + 1);
+            GameScenes.SetActive(true);
+            //SceneManager.LoadScene(SceneManager.GetActiveScene ().buildIndex + 1);
         } 
         if (SceneManager.GetActiveScene ().buildIndex ==total_levels) {
             GM_Lives.GameOver();

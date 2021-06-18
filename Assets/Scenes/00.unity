@@ -342,7 +342,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 280324942}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: Menu, Assembly-CSharp
           m_MethodName: buttonsound
           m_Mode: 1
@@ -366,7 +366,6 @@ GameObject:
   - component: {fileID: 280324939}
   - component: {fileID: 280324938}
   - component: {fileID: 280324937}
-  - component: {fileID: 280324942}
   - component: {fileID: 280324941}
   - component: {fileID: 280324943}
   m_Layer: 5
@@ -554,23 +553,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &280324942
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 280324936}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ce976274d4ef657b9433cf6fbc82195, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Audio: {fileID: 280324941}
-  _MenuID: 1
-  Button: {fileID: 8300000, guid: a094a681f6d6301c2b1c457e44a9bdd1, type: 3}
-  mainmenu: {fileID: 1115367911}
-  options: {fileID: 0}
 --- !u!114 &280324943
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1095,7 +1077,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 280324942}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: Menu, Assembly-CSharp
           m_MethodName: cursortrue
           m_Mode: 1
@@ -1503,7 +1485,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 280324942}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: Menu, Assembly-CSharp
           m_MethodName: buttonsound
           m_Mode: 1
